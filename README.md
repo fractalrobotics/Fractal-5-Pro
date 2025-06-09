@@ -1,8 +1,14 @@
 # Fractal 5 Pro
 
-Fractal 5 Pro is a multidirectional 5-axis 3D printer.
+The Fractal 5 Pro is a multidirectional 5-axis 3D printer.
 
-**Design Features**
+<p align="center">
+  <img src="./CAD/images/Fractal_5_Pro_ISO.PNG" width="500">
+</p>
+
+---
+
+**⚙️Design Features**
 - CoreXY Gantry
 - Direct Drive Extruder  
 - Fully Enclosed
@@ -15,7 +21,7 @@ Fractal 5 Pro is a multidirectional 5-axis 3D printer.
   - Removable textured spring-steel build surface
 - Compatible with Klipper Firmware
 
+---
 
-<p align="center">
-  <img src="./CAD/images/Fractal_5_Pro_ISO.PNG" width="500">
-</p>
+**Future Work**
+-Beef up the print bed gimbal
