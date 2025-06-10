@@ -29,7 +29,7 @@ Dozens of potential customers were interviewed to determine 3D printing needs, b
   - Commercially available 5-Axis 3D printers are huge and expensive
 
 # Solution: The Fractal 5 Pro
-Our response to the market research was to create an FDM printer
+Our response to the market research was to create an enclosed coreXY 5-Axis FDM 3D printer.
 
 ---
 
@@ -54,12 +54,16 @@ Our response to the market research was to create an FDM printer
 
 **What does this printer do that others can't?**
 - It provides all of the following in one product: high reliability, stronger parts, more design freedom, less waste material, large build volume, intuitive user experience, and ease of maintenance at a relatively affordable price.
+
 **Why FDM? Why not SLA or SLS?**
 - FDM printers are low maintenance, have an easy & clean setup, and are compatible with a large selection of affordable materials. Further, since FDM is the printing method that is most effected by orthotropy, it stands to benefit the most from 5-axis technology.
+
 **Why Direct Drive instead of Remote Drive?**
 - The customers interviewed tend to favor printers that are compatible with a wide selection of feedstock materials, including softer filaments. TPU needs direct drive to print effectively since it's so soft. Using remote drive to extrude soft filaments would be like pushing on the end of a string to get the far end to move, which doesn't work very well.
+
 **How is the print bed heated if it can spin infinitely? Wouldn't the wires get twisted up?**
 - We use a high current slip-ring to transfer power to the rotating shaft.
+
 **Why multidirectional slicing instead of non-planar 5-axis printing?**
 - Non-planar slicing requires significant training in advanced CAM softwares while multidirectional printing provides almost all the benefits of 5-axis 3D printing in a more accessable and familiar platform. Further, multidirectional 5-Axis does not require the printhead to be long and thin to achieve tight angles, so the printhead can achieve much higher print speeds with far less vibration than existing 5-axis 3D printers.
 
