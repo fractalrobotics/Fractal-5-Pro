@@ -2,7 +2,7 @@
 
 The Fractal 5 Pro is an open source intuitive benchtop multidirectional 5-axis 3D printer.
 
-A user-friendly 5-Axis slicer application was developed to go along with this printer. **You can download it for free here**. 💻
+💻 A user-friendly 5-Axis slicer application was developed to go along with this printer. **You can download it for free here**.
 
 <p align="center">
   <img src="./CAD/images/Fractal_5_Pro_ISO.PNG" width="500">
@@ -49,7 +49,7 @@ Our response to the customer interviews was to design an accessible product that
 - It provides all of the following in one product: high reliability, stronger parts, more design freedom, less waste material, large build volume, intuitive user experience, and ease of maintenance at a relatively affordable price.
 
 **Why FDM? Why not SLA or SLS?**
-- FDM printers are low maintenance, have an easy & clean setup, and are compatible with a large selection of affordable materials. Further, since FDM is the printing method that is most effected by orthotropy, it stands to benefit the most from 5-axis technology.
+- FDM printers are low maintenance, have an easy & clean setup, and are compatible with a large selection of affordable materials. Further, since FDM is the printing method that is most impacted by orthotropy, it stands to benefit the most from 5-axis technology.
 
 **Why Direct Drive instead of Remote Drive?**
 - The customers interviewed tend to favor printers that are compatible with a wide selection of feedstock materials, including softer filaments. TPU needs direct drive to print effectively since it's so soft. Using remote drive to extrude soft filaments would be like pushing on the end of a string to get the far end to move, which doesn't work very well.
