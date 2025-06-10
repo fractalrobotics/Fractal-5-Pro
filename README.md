@@ -2,9 +2,9 @@
 
 The Fractal 5 Pro is an intuitive benchtop multidirectional 5-axis 3D printer designed for Lab Engineers and Makerspace Managers.
 
-The design of this printer was motivated by the Fractal Robotics vision: **To accelerate the development of mechanical solutions.** In support of this vision, this printer aims to address the gap between the limitations of 3-axis FDM 3D printers and the accessibility of current 5-axis FDM 3D printers.
+The design of this printer was motivated by the Fractal Robotics vision: **To accelerate the development of mechanical solutions.** In support of this vision, this printer aims to address the gap between the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM 3D printers.
 
-💻 A user-friendly 5-Axis slicer application was developed to go along with this printer. You can download it for free **here**.
+A user-friendly 5-Axis slicer application was developed to go along with this printer. **You can download it for free here**. 💻
 
 <p align="center">
   <img src="./CAD/images/Fractal_5_Pro_ISO.PNG" width="500">
