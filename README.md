@@ -14,13 +14,13 @@ This project was motivated by the **Fractal Robotics** vision: **To accelerate t
 **📋Limitations of 3-Axis 3D Printers**
   - Part strength is limited due to the direction of printing
     - Parts often fail when forces are applied parallel to the direction of layer lines
-    - Only being able to stack layers in one direction limits design freedom
+    - Stacking layers in only one direction limits design freedom
   - Overhangs require support structures
     - The process of removing supports often damages or destroys a part
     - Support structures waste material
 
 **🔒Inaccessibility of Existing 5-Axis 3D Printers**
-  - No intuitive slicer software available
+  - No commercially available intuitive slicer applications
     - Non-planar slicing requires significant training on advanced CAM softwares
   - Commercially available 5-Axis 3D printers are huge and expensive
 
@@ -30,7 +30,8 @@ This project was motivated by the **Fractal Robotics** vision: **To accelerate t
 Dozens of potential customers were interviewed to determine 3D printing needs, budgets, and expectations across different industries. This process helped inform and focus design decisions.
 
 **🔑Key Customer Needs Translated to Design Decisions**
-Our response to the customer interviews was to design a product that addressed the shortfalls of 3-axis FDM while still being intuitive and accessible.
+
+Our response to the customer interviews was to design an accessible product that addressed the shortfalls of 3-axis FDM while still being easy to use.
 
   - Control over orthotropic strength, less waste material, reduced post-processing risk ➡️ 5-Axis
   - Ease of maintenance, clean setup ➡️ FDM, removable build surface, full-size front and side doors
