@@ -10,7 +10,7 @@ This machine was designed in support of the Fractal Robotics vision: **To accele
 
 ---
 
-# 🔎Market Gap:
+# 🔎Market Gap
 
 **📋Limitations of 3-Axis 3D Printers**
   - Part strength is limited due to the direction of printing
@@ -44,7 +44,7 @@ This machine was designed in support of the Fractal Robotics vision: **To accele
 
 ---
 
-**📝Future Work**
+# 📝Future Work
 - Redesign print bed gimbal for higher rigidity
   - Use 1/4" thick aluminum sheets instead of 1/8"
   - Rearrange A-Axis bearing assembly to minimize unsupported shaft length
