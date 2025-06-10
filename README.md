@@ -4,7 +4,7 @@ The Fractal 5 Pro is an intuitive benchtop multidirectional 5-axis 3D printer de
 
 The design of this printer was motivated by the Fractal Robotics vision: **To accelerate the development of mechanical solutions.** In support of this vision, this printer aims to address the gap between the limitations of 3-axis FDM 3D printers and the accessibility of current 5-axis FDM 3D printers.
 
-A user-friendly 5-Axis slicer application was developed to go along with this printer. You can download it for free **here**.
+💻 A user-friendly 5-Axis slicer application was developed to go along with this printer. You can download it for free **here**.
 
 <p align="center">
   <img src="./CAD/images/Fractal_5_Pro_ISO.PNG" width="500">
@@ -28,8 +28,8 @@ Dozens of potential customers were interviewed to determine 3D printing needs, b
     - Non-planar slicing requires significant training on advanced CAM softwares
   - Commercially available 5-Axis 3D printers are huge and expensive
 
-# Solution: The Fractal 5 Pro
-Our response to the market research was to create an enclosed coreXY 5-Axis FDM 3D printer.
+# 🔑Solution: The Fractal 5 Pro
+Our response to the market research was to create a multidirectional 5-Axis FDM 3D printer.
 
 ---
 
@@ -64,7 +64,10 @@ Our response to the market research was to create an enclosed coreXY 5-Axis FDM 
 **How is the print bed heated if it can spin infinitely? Wouldn't the wires get twisted up?**
 - We use a high current slip-ring to transfer power to the rotating shaft.
 
-**Why multidirectional slicing instead of non-planar 5-axis printing?**
+**What is multidirectional 5-axis 3D printing?**
+- ...
+
+**Why choose multidirectional slicing instead of non-planar printing?**
 - Non-planar slicing requires significant training in advanced CAM softwares while multidirectional printing provides almost all the benefits of 5-axis 3D printing in a more accessable and familiar platform. Further, multidirectional 5-Axis does not require the printhead to be long and thin to achieve tight angles, so the printhead can achieve much higher print speeds with far less vibration than existing 5-axis 3D printers.
 
 ---
