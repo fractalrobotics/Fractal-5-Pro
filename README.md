@@ -1,8 +1,8 @@
 # Fractal 5 Pro
 
-The Fractal 5 Pro is an intuitive benchtop multidirectional 5-axis 3D printer designed for Lab Engineers and Makerspace Managers.
+The Fractal 5 Pro is an open source intuitive benchtop multidirectional 5-axis 3D printer.
 
-The design of this printer was motivated by the Fractal Robotics vision: **To accelerate the development of mechanical solutions.** In support of this vision, this printer aims to address the gap between the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM 3D printers.
+This project was motivated by the **Fractal Robotics** vision: **To accelerate the development of mechanical solutions.** In support of this vision, this printer aims to address the gap between the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM 3D printers.
 
 A user-friendly 5-Axis slicer application was developed to go along with this printer. **You can download it for free here**. 💻
 
@@ -12,7 +12,7 @@ A user-friendly 5-Axis slicer application was developed to go along with this pr
 
 ---
 
-# 🔎Market Gap
+# 🔎Product-Market Fit
 Dozens of potential customers were interviewed to determine 3D printing needs, budgets, and expectations across different industries. This process helped inform and focus design decisions. The following is a summary of the conducted market research.
 
 **📋Limitations of 3-Axis 3D Printers**
@@ -28,33 +28,16 @@ Dozens of potential customers were interviewed to determine 3D printing needs, b
     - Non-planar slicing requires significant training on advanced CAM softwares
   - Commercially available 5-Axis 3D printers are huge and expensive
 
-# 🔑Solution: The Fractal 5 Pro
-Our response to the customer interviews was to design a product that addressed the shortfalls of 3-axis FDM while being intuitive and accessible.
+# 🔑Key Customer Needs Translated to Design Decisions
+Our response to the customer interviews was to design a product that addressed the shortfalls of 3-axis FDM while still being intuitive and accessible.
 
-**Key Customer Needs Translated to Design Decisions**
-  - Control over orthotropic strength, less waste material, reduced post-processing risk ➡️ 5-Axis
-  - Ease of maintenance, clean setup ➡️ FDM, removable build surface
-  - Reduced training time ➡️ Simple, effective, intuitive slicer software, backwards compatibility with 3-Axis 3D printing
-  - High reliability ➡️ CoreXY gantry, independently driven triple lead-screw Z-axis for auto bed leveling, rigif 30x30mm aluminum frame extrusions
-  - Expansive material compatibility ➡️ Direct Drive Extruder, heated build plate, enclosed printer
-  - Large print volume ➡️ 300mm Diameter x 250mm build height
-
----
-
-# ⚙️Design Features
-- CoreXY Gantry (high reliability)
-- Direct Drive Extruder  
-- Fully Enclosed
-- Rigid 30x30mm aluminum frame extrusions
-- Triple Lead-Screw Z Axis  
-- Dual Rotary Axis Printing Bed  
-  - 300mm Diameter x 250mm Build Height  
-  - Heated build plate up to 100°C  
-  - Infinite spin rotation about A-Axis  
-  - 0°–90° tilt rotation about B-Axis  
-  - Removable textured spring-steel build surface
-- Compatible with Klipper Firmware
-- Backwards compatible with 3-Axis 3D printing
+- Control over orthotropic strength, less waste material, reduced post-processing risk ➡️ 5-Axis
+- Ease of maintenance, clean setup ➡️ FDM, removable build surface, full-size front and side doors
+- Reduced training time ➡️ Intuitive multidirectional slicer software, backwards compatibility with 3-Axis 3D printing
+- Printing complex parts ➡️ Compatible with any 3D geometry
+- High reliability ➡️ CoreXY gantry, auto bed leveling, rigid 30x30mm aluminum frame extrusions
+- Expansive material compatibility ➡️ Direct Drive Extruder, heated build plate, fully enclosed
+- Large print volume ➡️ 300mm Diameter x 250mm build height
 
 ---
 
