@@ -29,7 +29,15 @@ Dozens of potential customers were interviewed to determine 3D printing needs, b
   - Commercially available 5-Axis 3D printers are huge and expensive
 
 # 🔑Solution: The Fractal 5 Pro
-Our response to the market research was to create a multidirectional 5-Axis FDM 3D printer.
+Our response to the customer interviews was to design a product that addressed the shortfalls of 3-axis FDM while being intuitive and accessible.
+
+**Key Customer Needs Translated to Design Decisions**
+  - Control over orthotropic strength, less waste material, reduced post-processing risk ➡️ 5-Axis
+  - Ease of maintenance, clean setup ➡️ FDM, removable build surface
+  - Reduced training time ➡️ Simple, effective, intuitive slicer software, backwards compatibility with 3-Axis 3D printing
+  - High reliability ➡️ CoreXY gantry, independently driven triple lead-screw Z-axis for auto bed leveling, rigif 30x30mm aluminum frame extrusions
+  - Expansive material compatibility ➡️ Direct Drive Extruder, heated build plate, enclosed printer
+  - Large print volume ➡️ 300mm Diameter x 250mm build height
 
 ---
 
