@@ -10,18 +10,19 @@ This machine was designed in support of the Fractal Robotics vision: **To accele
 
 ---
 
-**🔎Market Gap**
-  **📋Limitations of 3-Axis 3D Printers**
-  - Part strength is limited due to the direction of printing
-    - Parts tend to fail when forces are applied along the direction of layer lines
-    - Only being able to stack layers along one direction limits design freedom
-  - Overhangs require support structures
-    - The process of removing supports often damages or destroys a part
-    - Supports waste material
+**🔎Market Gap:**
 
-  **🔒Inaccessibility of Existing 5-Axis 3D Printers**
-  - No intuitive software available for non-planar printing
-  - Commercially available printers are huge and expensive
+**-📋Limitations of 3-Axis 3D Printers**
+    - Part strength is limited due to the direction of printing
+      - Parts tend to fail when forces are applied along the direction of layer lines
+      - Only being able to stack layers along one direction limits design freedom
+    - Overhangs require support structures
+      - The process of removing supports often damages or destroys a part
+      - Support structures waste material
+
+**-🔒Inaccessibility of Existing 5-Axis 3D Printers**
+    - No intuitive software available for non-planar printing
+    - Commercially available printers are huge and expensive
 
 ---
 
