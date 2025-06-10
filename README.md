@@ -10,9 +10,9 @@ This machine was designed in support of the Fractal Robotics vision: **To accele
 
 ---
 
-**🔎Market Gap:**
+# 🔎Market Gap:
 
-  **📋Limitations of 3-Axis 3D Printers**
+**📋Limitations of 3-Axis 3D Printers**
   - Part strength is limited due to the direction of printing
     - Parts tend to fail when forces are applied along the direction of layer lines
     - Only being able to stack layers along one direction limits design freedom
@@ -20,13 +20,14 @@ This machine was designed in support of the Fractal Robotics vision: **To accele
     - The process of removing supports often damages or destroys a part
     - Support structures waste material
 
-  **🔒Inaccessibility of Existing 5-Axis 3D Printers**
+**🔒Inaccessibility of Existing 5-Axis 3D Printers**
   - No intuitive slicer software available
+    - Non-planar slicing requires significant training on advanced CAM softwares
   - Commercially available printers are huge and expensive
 
 ---
 
-**⚙️Design Features**
+# ⚙️Design Features
 - CoreXY Gantry (high reliability)
 - Direct Drive Extruder  
 - Fully Enclosed
