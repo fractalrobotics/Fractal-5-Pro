@@ -10,8 +10,8 @@ The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
 
 # Product Overview
 
-# User Guide
-I have not made a full manufacturing and assembly guide for the Fractal 5 Pro. If you want to build your own, you will have to figure it out from looking at the CAD, the BOM, and whatever guidance I provide in this section of the README file.
+# Behind the Build
+I have not made a full manufacturing and assembly guide for the Fractal 5 Pro. If you want to build your own, you will have to figure it out from looking at the CAD, the BOM, whatever guidance I provide in this section of the README file, and your own intuition.
 
 Several aspects of the design (such as the CoreXY system and triple lead-screw Z-axis) were inspired by the VORON Trident project, which is also licensed under GPLv3. This project complies with the GPLv3 license and is released under the same terms. I gratefully acknowledge VORON's contribution to the open hardware ecosystem. While the Fractal 5 Pro does not currently have an assembly guide, I encourage you to reference the VORON Trident assembly guide as some aspects will be relevant enough to provide helpful guidance during assembly.
 
@@ -33,7 +33,24 @@ The Fractal 5 Pro is comprised of a combination of COTS parts, 3D printed parts,
   <img src="./CAD/images/CNC.jpg" width="500">
 </p>
 
-  - The only part that requires the lathe is the A-axis shaft, which was turned painstakingly on my grandfather's vintage Craftsman 101 lathe. I highly suggest using a bigger lathe to make this part. The A-shaft requires two main features: 1. a retention ring groove on the outside, and 2. a thru bore to allow the slip ring and wires to pass through.
+  - The only part that requires the lathe is the A-axis shaft, which was turned painstakingly on my grandfather's vintage Craftsman 101 lathe. I highly suggest using a bigger lathe to make this part. The A-shaft requires two main features: 1. an exterior retention ring groove, and 2. a thru bore to allow the slip ring and wires to pass through.
+
+<p align="center">
+  <img src="./CAD/images/lathe.jpg" width="500">
+</p>
+
+  - Given the limited power of the lathe, I needed to use a dremel tool with a 90° attachment and abrasive cutoff wheel as a cutting instrument for making the exterior retention ring groove. I created a rig to attach it to the carriage of the lathe as shown below.
+
+<p align="center">
+  <img src="./CAD/images/dremel_tool_rig.jpg" width="500">
+</p>
+
+<p align="center">
+  <img src="./CAD/images/dremel_plus_lathe.jpg" width="500">
+</p>
+
+
+
 
 - **Quality Inspection**
   - The most critical dimension to get right is the flatness of the build plate.
