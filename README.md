@@ -87,7 +87,7 @@ Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/
 - The customers interviewed tend to favor printers that are compatible with a wide selection of feedstock materials, including softer filaments. TPU needs direct drive to print effectively since it's so soft. Using remote drive to extrude soft filaments would be like pushing on the end of a string to get the far end to move, which doesn't work very well.
 
 **How is the print bed heated if it can spin infinitely? Wouldn't the wires get twisted up?**
-- We use a high current slip-ring to transfer power to the rotating shaft.
+- A high current slip-ring is used to transfer power to the rotating shaft.
 
 ---
 
