@@ -17,7 +17,26 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 
 **🔨Manufacturing**
 
-The Fractal 5 Pro is comprised of a combination of stock and modified COTS parts, 3D printed parts, and custom machined parts. All required materials are included in the BOM.
+The Fractal 5 Pro is comprised of a combination of COTS parts, 3D printed parts, and custom machined parts. The BOM lists all required materials with links to purchase them. Excluding taxes and shipping costs, the total materials cost for the Fractal 5 Pro is about $1,900.
+
+- **3D Printed Parts**
+  - There are around 140 3D printed parts, totalling just under 2kg of feedstock material
+  - Each one is printed in ABS with 0.2mm layer height, a shell wall thickness of 4, top & bottom shell thickness of 5, with 40% triangular infill
+  - Use supports as needed
+
+- **Machined Parts**
+  - All machined parts are 6061 aluminum. The stock geometry includes sheets, bars, and one shaft.
+  - A CNC machine and lathe are required if you want to make these parts at home. If you don't own these machines, you can send the files to a local machine shop or use an online prototyping shop.
+  - I CNC milled all the sheet and bar stock on my Shapeoko Pro CNC machine. Some parts have holes at 90° to each other, which I achieved on my 3-axis CNC machine by splitting those parts into two separate tasks and reorienting the part in between tasks (if only I had a 5-axis CNC machine!).
+
+<p align="center">
+  <img src="./CAD/images/CNC.jpg" width="500">
+</p>
+
+  - The only part that requires the lathe is the A-axis shaft, which was turned painstakingly on my grandfather's vintage Craftsman 101 lathe. I highly suggest using a bigger lathe to make this part. The A-shaft requires two main features: 1. a retention ring groove on the outside, and 2. a thru bore to allow the slip ring and wires to pass through.
+
+- **Quality Inspection**
+  - The most critical dimension to get right is the flatness of the build plate.
 
 **🔩Assembly**
 
