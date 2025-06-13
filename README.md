@@ -10,6 +10,22 @@ The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
 
 # Product Overview
 
+# User Guide
+I have not made a full manufacturing and assembly guide for the Fractal 5 Pro. If you want to build your own, you will have to figure it out from looking at the CAD, the BOM, and whatever guidance I provide in this section of the README file.
+
+Several aspects of the design (such as the CoreXY system and triple lead-screw Z-axis) were inspired by the VORON Trident project, which is also licensed under GPLv3. This project complies with the GPLv3 license and is released under the same terms. I gratefully acknowledge VORON's contribution to the open hardware ecosystem. While the Fractal 5 Pro does not currently have an assembly guide, I encourage you to reference the VORON Trident assembly guide as some aspects will be relevant enough to provide helpful guidance during assembly.
+
+**🔨Manufacturing**
+
+The Fractal 5 Pro is comprised of a combination of stock and modified COTS parts, 3D printed parts, and custom machined parts. All required materials are included in the BOM.
+
+**🔩Assembly**
+
+**🔌Electronics & Wiring**
+
+**💾Firmware**
+
+---
 
 # Project Motivation
 This project was motivated by the **Fractal Robotics** vision: **To accelerate the development of mechanical solutions.** In support of this vision, this project aims to address the observed gap between the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM.
