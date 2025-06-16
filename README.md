@@ -38,23 +38,18 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 - Included with the printer is a leveling bar that can be used to calibrate the build surface to be coplanar with the B-axis. This step is critical to ensure axis alignment when performing coordinate transformations. To complete this calibration, the leveling bar must be placed into the slots on either side of the gimbal as shown above. There are three standoffs that position the build plate that can be adjusted using an allen key. The user should increase the height of each standoff until a slight scratching noise is heard when the build plate rotates past the leveling bar. The leveling bar must be removed when the printer is powered on. This step must be completed after the printer is first assembled, and must be completed again any time the printer is moved.
 
 **Z-Axis Elevator**
-<p align="center">
-  <img src="./CAD/images/z_axis_elevator_isolated.PNG" width="300">
-</p>
+<img src="./CAD/images/z_axis_elevator_isolated.PNG" width="300">
+
 
 - Similar to the VORON Trident, three independently driven lead screws are used to actuate the Z-axis.
 - Spherical bearings are used to allow the elevator frame to pivot to avoid binding and allow for tilt adjustments for auto-bed leveling.
 - Sensorless homing is used to detect the upper range of motion of each lead screw.
 
 **Printhead**
-<p align="center">
-  <img src="./CAD/images/printhead_isolated.PNG" width="300">
-</p>
+<img src="./CAD/images/printhead_isolated.PNG" width="300">
 
 **CoreXY Gantry**
-<p align="center">
-  <img src="./CAD/images/corexy_gantry_isolated.PNG" width="300">
-</p>
+<img src="./CAD/images/corexy_gantry_isolated.PNG" width="300">
 
 - The CoreXY gantry system is similar to the one used on the VORON Trident with some important differences that are bulleted below:
   - The belt system was adapted to fit the larger 30x30mm aluminum frame extrusions of the Fractal 5 Pro.
@@ -62,18 +57,15 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 - CoreXY motion systems provide more reliable prints and allow for higher print speeds compared to bedslinger motion systems.
 
 **Frame & Enclosure**
-<p align="center">
-  <img src="./CAD/images/frame_and_enclosure_isolated.PNG" width="300">
-</p>
+<img src="./CAD/images/frame_and_enclosure_isolated.PNG" width="300">
+
 
 <p align="center">
   <img src="./CAD/images/alpha_unit.png" width="300">
 </p>
 
 **Electronics**
-<p align="center">
-  <img src="./CAD/images/electronics_isolated.PNG" width="300">
-</p>
+<img src="./CAD/images/electronics_isolated.PNG" width="300">
 
 - A Raspberry Pi is used to run the firmware and an Octopus Pro is used to control the circuit elements.
 
@@ -83,9 +75,7 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 </p>
 
 **Firmware**
-<p align="center">
-  <img src="./CAD/images/firmware.PNG" width="300">
-</p>
+<img src="./CAD/images/firmware.PNG" width="300">
 
 - The Fractal 5 Pro uses Klipper firmware.
 - This allows the user to interface with the printer wirelessly on their laptop from anywhere on their local network.
