@@ -16,9 +16,8 @@ This printer is comprised of a combination of COTS parts, 3D printed parts, and 
 Several aspects of the design (such as the CoreXY system and triple lead-screw Z-axis) were inspired by the VORON Trident project, which is also licensed under GPLv3. This project complies with the GPLv3 license and is released under the same terms. I gratefully acknowledge VORON's contribution to the open hardware ecosystem.
 
 **Gimbal**
-<p align="center">
-  <img src="./CAD/images/gimbal_isolated.PNG" width="300">
-</p>
+
+<img src="./CAD/images/gimbal_isolated.PNG" width="300">
 
 - The gimbal assembly includes the heated build plate, adjustable standoffs, A-axis shaft, bearings, A-axis belt drive, slip ring, and B-axis gear drive.
 
