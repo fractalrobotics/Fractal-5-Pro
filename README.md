@@ -67,6 +67,10 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
   <img src="./CAD/images/frame_and_enclosure_isolated.PNG" width="300">
 </p>
 
+<p align="center">
+  <img src="./CAD/images/alpha_unit.png" width="300">
+</p>
+
 **Electronics**
 <p align="center">
   <img src="./CAD/images/electronics_isolated.PNG" width="300">
@@ -87,7 +91,7 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 - The Fractal 5 Pro uses Klipper firmware.
 - This allows the user to interface with the printer wirelessly on their laptop from anywhere on their local network.
 - The custom CFG file and saved variables file required to run the Fractal 5 Pro are located [here](https://github.com/fractalrobotics/Fractal-5-Pro/tree/main/Firmware).
-- The [KIUAH](https://github.com/dw-0/kiauh) helper can be used to install Klipper.
+- The [KIAUH](https://github.com/dw-0/kiauh) helper can be used to install Klipper.
 
 ---
 
