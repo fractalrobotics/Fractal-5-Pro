@@ -11,7 +11,7 @@ The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
 # Product Overview
 
 # Design
-I have not made a full manufacturing and assembly guide for the Fractal 5 Pro. If you want to build your own, you will have to figure it out from looking at the CAD and the BOM.
+This printer is comprised of a combination of COTS parts, 3D printed parts, and custom machined parts. The BOM lists all required materials with links to purchase them. Excluding taxes and shipping costs, the total materials cost for the Fractal 5 Pro is about $1,900.
 
 Several aspects of the design (such as the CoreXY system and triple lead-screw Z-axis) were inspired by the VORON Trident project, which is also licensed under GPLv3. This project complies with the GPLv3 license and is released under the same terms. I gratefully acknowledge VORON's contribution to the open hardware ecosystem.
 
@@ -20,13 +20,12 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
   <img src="./CAD/images/gimbal_isolated.PNG" width="300">
 </p>
 
-- The gimbal system comprises the A & B (spin & tilt) Axes and heated build plate.
+- The gimbal assembly includes the heated build plate, adjustable standoffs, A-axis shaft, bearings, A-axis belt drive, slip ring, and B-axis gear drive.
 
 <p align="center">
   <img src="./CAD/images/gimbal_front.jpg" width="300">
 </p>
 
-- The gimbal assembly includes the build plate, adjustable standoffs, A-axis shaft, bearings, A-axis belt drive, slip ring, and B-axis gear drive.
 - The slip ring supplies power to and reads thermistor data from the build plate, allowing the A-axis to spin infinitely in either direction without wires getting tangled.
 - The A-axis shaft is held in place with a spring-loaded bearing stack with a retention ring in-between the bearings. The bearing stack is centered using locating pins.
 - A pulley with adjustable belt tension is used to drive the A-axis. This will be revised as stated in the future work section.
@@ -44,6 +43,9 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
   <img src="./CAD/images/z_axis_elevator_isolated.PNG" width="300">
 </p>
 
+- Similar to the VORON Trident, three independently driven lead screws are used to actuate the Z-axis.
+- Spherical bearings are used to allow the elevator frame to pivot to avoid binding and allow for tilt adjustments for auto-bed leveling.
+- Sensorless homing is used to detect the upper range of motion of each lead screw.
 
 **Printhead**
 <p align="center">
@@ -55,6 +57,11 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
   <img src="./CAD/images/corexy_gantry_isolated.PNG" width="300">
 </p>
 
+- The CoreXY gantry system is similar to the one used on the VORON Trident with some important differences that are bulleted below:
+  - The belt system was adapted to fit the larger 30x30mm aluminum frame extrusions of the Fractal 5 Pro.
+  - The belts run on the rear side of the gantry to be compatible with the unique printhead design.
+- CoreXY motion systems provide more reliable prints and allow for higher print speeds compared to bedslinger motion systems.
+
 **Frame & Enclosure**
 <p align="center">
   <img src="./CAD/images/frame_and_enclosure_isolated.PNG" width="300">
@@ -65,79 +72,22 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
   <img src="./CAD/images/electronics_isolated.PNG" width="300">
 </p>
 
+- A Raspberry Pi is used to run the firmware and an Octopus Pro is used to control the circuit elements.
+
+
+<p align="center">
+  <img src="./CAD/images/electronics.jpg" width="300">
+</p>
+
 **Firmware**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**🔨Manufacturing**
-
-The Fractal 5 Pro is comprised of a combination of COTS parts, 3D printed parts, and custom machined parts. The BOM lists all required materials with links to purchase them. Excluding taxes and shipping costs, the total materials cost for the Fractal 5 Pro is about $1,900.
-
-- **3D Printed Parts**
-  - There are around 140 3D printed parts, totalling just under 2kg of feedstock material
-  - Each one is printed in ABS with 0.2mm layer height, a shell wall thickness of 4, top & bottom shell thickness of 5, with 40% triangular infill
-  - Use supports as needed
-
-- **Machined Parts**
-  - All machined parts are 6061 aluminum. The stock geometry includes sheets, bars, and one shaft.
-  - A CNC machine and lathe are required if you want to make these parts at home. If you don't own these machines, you can send the files to a local machine shop or use an online prototyping shop.
-  - I CNC milled all the sheet and bar stock on my Shapeoko Pro CNC machine. Some parts have holes at 90° to each other, which I achieved on my 3-axis CNC machine by splitting those parts into two separate tasks and reorienting the part in between tasks (if only I had a 5-axis CNC machine!).
-
 <p align="center">
-  <img src="./CAD/images/CNC.jpg" width="500">
+  <img src="./CAD/images/firmware.PNG" width="300">
 </p>
 
-  - The only part that requires the lathe is the A-axis shaft, which was turned painstakingly on my grandfather's vintage Craftsman 101 lathe. I highly suggest using a bigger lathe to make this part. The A-shaft requires two main features: 1. an exterior retention ring groove, and 2. a thru bore to allow the slip ring and wires to pass through.
-
-<p align="center">
-  <img src="./CAD/images/lathe.jpg" width="500">
-</p>
-
-  - Given the limited power of the lathe, I needed to use a dremel tool with a 90° attachment and abrasive cutoff wheel as a cutting instrument for making the exterior retention ring groove. I created a rig for mounting it to the carriage of the lathe as shown below.
-
-<p align="center">
-  <img src="./CAD/images/dremel_tool_rig.jpg" width="500">
-</p>
-
-<p align="center">
-  <img src="./CAD/images/dremel_plus_lathe.jpg" width="500">
-</p>
-
-
-
-
-- **Quality Inspection**
-  - One of the most critical dimensions on the printer is the flatness of the build plate. I was not able to find sheet aluminum with any reasonable flatness tolerance at a realistic price, so I designed a cross-brace to bend the aluminum to flat.
-  - Before I started brainstorming ways to make the build plate flatter, I first defined a flatness tolerance requirement such that the build plate cannot deviate more than +/- 0.15mm out of flatness. I chose this number because I knew I would be primarily testing the machine with a layer thickness of 0.3mm, so I figured the printer could tolerate printing on a plate that was flat within +/- half of a layer thickness.
-  - I first needed to quantify the flatness of the build plate to see how badly the sheet was warped without any modifications. I do not own a coordinate measuring machine (CMM), so I had the idea to convert my CNC machine into a makeshift CMM by taping a dial indicator to the toolhead. This worked extremely well and I determined that the worst deviation from flatness was 0.762mm.
-  - Now that I knew how warped the build plate was, I thought of a number of ways to flatten  it. I decided that an aluminum cross-brace stiffener would be an inexpensive and easy to machine solution. I designed the geometry of the cross brace such that it would be strong enough to deflect a build plate with twice as much deflection as what I had measured.
-<p align="center">
-  <img src="./CAD/images/build_plate_cross_braced.PNG" width="500">
-</p>
-  - After building it, I needed to measure the flatness of the braced build plate to see if it was within spec. Since the build plate will be operating from room temperature all the way up to 100°C, I hooked up the heater to a power source and measured flatness at 20 points scattered across its surface at room temperature, 50°C, and again at 100°C. The worst deflection was +/- 0.14mm while the machine was at 100°C.
-<p align="center">
-  <img src="./CAD/images/makeshift_cmm.jpg" width="500">
-</p>
-  - While the flatness tolerance requirement was satisfied, I would have liked to achieve a flatter build plate. When I initially measured the unmodified build plate, I only took the measurement at room temperature. I should have taken measurements across room temperature, 50°C and 100°C like I measured for the final test and used the largest deflection value to drive the design. Since my time was limited and the braced build plate design had passed inspection, I decided to move forward instead of spending more time perfecting the design.
-
-**🔌Electronics & Wiring**
-
-**💾Firmware**
+- The Fractal 5 Pro uses Klipper firmware.
+- This allows the user to interface with the printer wirelessly on their laptop from anywhere on their local network.
+- The custom CFG file and saved variables file required to run the Fractal 5 Pro are located [here](https://github.com/fractalrobotics/Fractal-5-Pro/tree/main/Firmware).
+- The [KIUAH](https://github.com/dw-0/kiauh) helper can be used to install Klipper.
 
 ---
 
