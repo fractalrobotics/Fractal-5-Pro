@@ -10,10 +10,56 @@ The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
 
 # Product Overview
 
-# Behind the Build
-I have not made a full manufacturing and assembly guide for the Fractal 5 Pro. If you want to build your own, you will have to figure it out from looking at the CAD, the BOM, whatever guidance I provide in this section of the README file, and your own intuition.
+# Design
+I have not made a full manufacturing and assembly guide for the Fractal 5 Pro. If you want to build your own, you will have to figure it out from looking at the CAD and the BOM.
 
-Several aspects of the design (such as the CoreXY system and triple lead-screw Z-axis) were inspired by the VORON Trident project, which is also licensed under GPLv3. This project complies with the GPLv3 license and is released under the same terms. I gratefully acknowledge VORON's contribution to the open hardware ecosystem. While the Fractal 5 Pro does not currently have an assembly guide, I encourage you to reference the VORON Trident assembly guide as some aspects will be relevant enough to provide helpful guidance during assembly.
+Several aspects of the design (such as the CoreXY system and triple lead-screw Z-axis) were inspired by the VORON Trident project, which is also licensed under GPLv3. This project complies with the GPLv3 license and is released under the same terms. I gratefully acknowledge VORON's contribution to the open hardware ecosystem.
+
+**Gimbal**
+<p align="center">
+  <img src="./CAD/images/gimbal_isolated.PNG" width="700">
+</p>
+
+
+**Z-Axis Elevator**
+<p align="center">
+  <img src="./CAD/images/z_axis_elevator_isolated.PNG" width="700">
+</p>
+
+
+**Printhead**
+<p align="center">
+  <img src="./CAD/images/printhead_isolated.PNG" width="700">
+</p>
+
+**CoreXY Gantry**
+<p align="center">
+  <img src="./CAD/images/corexy_gantry_isolated.PNG" width="700">
+</p>
+
+**Electronics**
+<p align="center">
+  <img src="./CAD/images/electronics_isolated.PNG" width="700">
+</p>
+
+**Firmware**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **🔨Manufacturing**
 
@@ -65,9 +111,6 @@ The Fractal 5 Pro is comprised of a combination of COTS parts, 3D printed parts,
   <img src="./CAD/images/makeshift_cmm.jpg" width="500">
 </p>
   - While the flatness tolerance requirement was satisfied, I would have liked to achieve a flatter build plate. When I initially measured the unmodified build plate, I only took the measurement at room temperature. I should have taken measurements across room temperature, 50°C and 100°C like I measured for the final test and used the largest deflection value to drive the design. Since my time was limited and the braced build plate design had passed inspection, I decided to move forward instead of spending more time perfecting the design.
-
-
-**🔩Assembly**
 
 **🔌Electronics & Wiring**
 
@@ -165,7 +208,7 @@ Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/
 - Integrate accelerometer into printhead for input shaping (resonance cancellation)
 - Instead of using the inductive probe for centering the print bed, use a sensor that has better defined sensing radii in the X and Y directions
   - The same centering routine can be used, but a different sensor solution is needed
-
+- Create an airtight enclosure for the filament spool
 If you build a Fractal 5 Pro and discover any other problems, please let me know.
 
 ---
