@@ -5,7 +5,7 @@ The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
 💻 An open-source 5-Axis slicer application was developed to go along with this printer. You can check out [the GitHub page for it here](https://github.com/fractalrobotics/Fractal-Cortex) to download it for free.
 
 <p align="center">
-  <img src="./CAD/images/Fractal_5_Pro_ISO.PNG" width="500">
+  <img src="./CAD/images/alpha_unit.PNG" width="500">
 </p>
 
 # Product Overview
@@ -39,7 +39,7 @@ The Fractal 5 Pro is comprised of a combination of COTS parts, 3D printed parts,
   <img src="./CAD/images/lathe.jpg" width="500">
 </p>
 
-  - Given the limited power of the lathe, I needed to use a dremel tool with a 90° attachment and abrasive cutoff wheel as a cutting instrument for making the exterior retention ring groove. I created a rig to attach it to the carriage of the lathe as shown below.
+  - Given the limited power of the lathe, I needed to use a dremel tool with a 90° attachment and abrasive cutoff wheel as a cutting instrument for making the exterior retention ring groove. I created a rig to mount it to the carriage of the lathe as shown below.
 
 <p align="center">
   <img src="./CAD/images/dremel_tool_rig.jpg" width="500">
