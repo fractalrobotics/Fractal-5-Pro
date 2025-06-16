@@ -37,6 +37,11 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
   <img src="./CAD/images/corexy_gantry_isolated.PNG" width="700">
 </p>
 
+**Frame & Enclosure**
+<p align="center">
+  <img src="./CAD/images/frame_and_enclosure_isolated.PNG" width="700">
+</p>
+
 **Electronics**
 <p align="center">
   <img src="./CAD/images/electronics_isolated.PNG" width="700">
