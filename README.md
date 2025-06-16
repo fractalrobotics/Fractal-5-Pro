@@ -17,34 +17,34 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 
 **Gimbal**
 <p align="center">
-  <img src="./CAD/images/gimbal_isolated.PNG" width="700">
+  <img src="./CAD/images/gimbal_isolated.PNG" width="300">
 </p>
 
 
 **Z-Axis Elevator**
 <p align="center">
-  <img src="./CAD/images/z_axis_elevator_isolated.PNG" width="700">
+  <img src="./CAD/images/z_axis_elevator_isolated.PNG" width="300">
 </p>
 
 
 **Printhead**
 <p align="center">
-  <img src="./CAD/images/printhead_isolated.PNG" width="700">
+  <img src="./CAD/images/printhead_isolated.PNG" width="300">
 </p>
 
 **CoreXY Gantry**
 <p align="center">
-  <img src="./CAD/images/corexy_gantry_isolated.PNG" width="700">
+  <img src="./CAD/images/corexy_gantry_isolated.PNG" width="300">
 </p>
 
 **Frame & Enclosure**
 <p align="center">
-  <img src="./CAD/images/frame_and_enclosure_isolated.PNG" width="700">
+  <img src="./CAD/images/frame_and_enclosure_isolated.PNG" width="300">
 </p>
 
 **Electronics**
 <p align="center">
-  <img src="./CAD/images/electronics_isolated.PNG" width="700">
+  <img src="./CAD/images/electronics_isolated.PNG" width="300">
 </p>
 
 **Firmware**
