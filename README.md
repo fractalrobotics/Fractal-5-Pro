@@ -5,7 +5,7 @@ The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
 💻 An open-source 5-Axis slicer application was developed to go along with this printer. You can check out [the GitHub page for it here](https://github.com/fractalrobotics/Fractal-Cortex) to download it for free.
 
 <p align="center">
-  <img src="./CAD/images/alpha_unit.PNG" width="500">
+  <img src="./CAD/images/alpha_unit.jpg" width="500">
 </p>
 
 # Product Overview
