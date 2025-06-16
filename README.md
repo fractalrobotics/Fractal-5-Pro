@@ -62,13 +62,13 @@ The Fractal 5 Pro is comprised of a combination of COTS parts, 3D printed parts,
   <img src="./CAD/images/build_plate_cross_braced.PNG" width="500">
 </p>
 
-  - After building it, I needed to measure the flatness of the braced build plate to see if it was within spec. Since the build plate will be operating from room temperature all the way up to 100°C, I hooked up the heater to a power source and measured flatness at 20 points scattered across its surface at room temperature, 50°C, and again at 100°C. The worst deflection was +/- 0.14mm while the machine was at 100°C.
+   - After building it, I needed to measure the flatness of the braced build plate to see if it was within spec. Since the build plate will be operating from room temperature all the way up to 100°C, I hooked up the heater to a power source and measured flatness at 20 points scattered across its surface at room temperature, 50°C, and again at 100°C. The worst deflection was +/- 0.14mm while the machine was at 100°C.
 
 <p align="center">
   <img src="./CAD/images/makeshift_cmm.jpg" width="500">
 </p>
 
-  - While the flatness tolerance requirement was satisfied, I would have liked to achieve a flatter build plate. When I initially measured the unmodified build plate, I only took the measurement at room temperature. I should have taken measurements across room temperature, 50°C and 100°C like I measured for the final test and used the largest deflection value to drive the design. Since my time was limited and the braced build plate design had passed inspection, I decided to move forward instead of spending more time perfecting the design.
+   - While the flatness tolerance requirement was satisfied, I would have liked to achieve a flatter build plate. When I initially measured the unmodified build plate, I only took the measurement at room temperature. I should have taken measurements across room temperature, 50°C and 100°C like I measured for the final test and used the largest deflection value to drive the design. Since my time was limited and the braced build plate design had passed inspection, I decided to move forward instead of spending more time perfecting the design.
 
 **🔩Assembly**
 
