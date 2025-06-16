@@ -59,7 +59,7 @@ The Fractal 5 Pro is comprised of a combination of COTS parts, 3D printed parts,
   - Now that I knew how warped the build plate was, I thought of a number of ways to flatten  it. I decided that an aluminum cross-brace stiffener would be an inexpensive and easy to machine solution. I designed the geometry of the cross brace such that it would be strong enough to deflect a build plate with twice as much deflection as what I had measured.
 
 <p align="center">
-  <img src="./CAD/images/build_plate_cross_braced.jpg" width="500">
+  <img src="./CAD/images/build_plate_cross_braced.png" width="500">
 </p>
 
   - After building it, I needed to measure the flatness of the braced build plate to see if it was within spec. Since the build plate will be operating from room temperature all the way up to 100°C, I hooked up the heater to a power source and measured flatness at 20 points scattered across its surface at room temperature, 50°C, and again at 100°C. The worst deflection was +/- 0.14mm while the machine was at 100°C.
