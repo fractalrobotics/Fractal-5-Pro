@@ -5,7 +5,7 @@ The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
 💻 An open-source 5-Axis slicer application was developed to go along with this printer. You can check out [the GitHub page for it here](https://github.com/fractalrobotics/Fractal-Cortex) to download it for free.
 
 <p align="center">
-  <img src="./CAD/images/alpha_unit.png" width="700">
+  <img src="./CAD/images/alpha_unit_front.jpg" width="600">
 </p>
 
 # Product Overview
@@ -20,6 +20,24 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
   <img src="./CAD/images/gimbal_isolated.PNG" width="300">
 </p>
 
+- The gimbal system comprises the A & B (spin & tilt) Axes and heated build plate.
+
+<p align="center">
+  <img src="./CAD/images/gimbal_front.jpg" width="300">
+</p>
+
+- The gimbal assembly includes the build plate, adjustable standoffs, A-axis shaft, bearings, A-axis belt drive, slip ring, and B-axis gear drive.
+- The slip ring supplies power to and reads thermistor data from the build plate, allowing the A-axis to spin infinitely in either direction without wires getting tangled.
+- The A-axis shaft is held in place with a spring-loaded bearing stack with a retention ring in-between the bearings. The bearing stack is centered using locating pins.
+- A pulley with adjustable belt tension is used to drive the A-axis. This will be revised as stated in the future work section.
+- The large B-axis gear with adjustable pinion placement is used to drive the B-axis.
+
+<p align="center">
+  <img src="./CAD/images/surface_coplanarity.jpg" width="300">
+</p>
+
+- The build surface is a magnetically removable PEI-coated spring steel sheet.
+- Included with the printer is a leveling bar that can be used to calibrate the build surface to be coplanar with the B-axis. This step is critical to ensure axis alignment when performing coordinate transformations. To complete this calibration, the leveling bar must be placed into the slots on either side of the gimbal as shown above. There are three standoffs that position the build plate that can be adjusted using an allen key. The user should increase the height of each standoff until a slight scratching noise is heard when the build plate rotates past the leveling bar. The leveling bar must be removed when the printer is powered on. This step must be completed after the printer is first assembled, and must be completed again any time the printer is moved.
 
 **Z-Axis Elevator**
 <p align="center">
@@ -208,7 +226,7 @@ Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/
   - Use 1/4" thick aluminum sheets instead of 1/8"
   - Rearrange A-Axis bearing assembly to minimize unsupported shaft length
   - Incorporate larger corner gussets
-- Change A-axis pulley drive to a high ratio gear drive
+- Change A-axis pulley drive to a high ratio gear drive. The belt system doesn't have enough torque and could use some finer angular resolution.
 - Convert cable-chain wire harness system to CAN-bus
 - Integrate accelerometer into printhead for input shaping (resonance cancellation)
 - Instead of using the inductive probe for centering the print bed, use a sensor that has better defined sensing radii in the X and Y directions
