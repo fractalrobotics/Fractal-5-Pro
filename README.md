@@ -86,6 +86,13 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
   - The belts attach to the printhead on the rear side of the gantry to be compatible with the unique printhead design.
 - CoreXY motion systems provide more reliable prints and allow for higher print speeds compared to bedslinger motion systems.
 
+<p align="center">
+<img src="./CAD/images/gantry_front.jpg" width="350">
+</p>
+
+- The tension in each belt can be adjusted using an allen key via the idler blocks on either side of the gantry.
+- Cable chains are used to manage wires along the X and Y axes. Wire management for the printhead should be converted to CAN bus as stated in the future work section.
+
 **Frame & Enclosure**
 
 <p align="center">
