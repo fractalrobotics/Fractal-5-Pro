@@ -69,7 +69,7 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 - The printhead uses a BondTech LGX Lite V2 direct drive extruder due to its compact size and ideal shape for this application.
 - An E3D Volcano hotend is used so that the high flow rate of the nozzle can keep up with the high speed capability of the coreXY gantry.
 - A radial fan and swept duct is used for part cooling and the stock E3D axial fan is used to cool the hotend heat sink.
-- An inductive probe is used both for auto bed leveling and for calibrating to the center of the build plate. Due to the difficult to characterize electromagnetic field shape of the inductive probe, it was tested and decided to have low reliability for center calibration. The inductive probe should still be used for auto bed leveling, but another type of sensor should be used for center calibration as is discussed in the future work section.
+- An inductive probe is used for both auto bed leveling and calibrating to the center of the build plate. I created an edge-finding procedure by writing custom G-code macros in Klipper for the center calibration process. While the center calibration routine was tested and works, the inductive probe is not ideal for use in this application because of its difficult to characterize electromagnetic field shape. The inductive probe still works great for auto bed leveling, but a different type of sensor should be selected for center calibration as is discussed in the future work section.
 
 <p align="center">
 <img src="./CAD/images/printhead_views.png" width="700">
