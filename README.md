@@ -114,13 +114,14 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 </p>
 
 - A Raspberry Pi is used to run the firmware and an Octopus Pro is used to control the circuit elements.
-
+- A 24V, 350W power supply is used to power all the circuit elements while a separate 5V power supply is used for the Raspberry Pi.
+- Four fans are used to cool the electronics. This can be reduced to two fans as stated in the future work section.
 
 <p align="center">
   <img src="./CAD/images/electronics.jpg" width="350">
 </p>
 
-- The electronics are enclosed separately from the rest of the printer volume and can be accessed via a removable panel underneath the main printer volume.
+- The electronics are enclosed separately from the rest of the printer and can be accessed via a removable panel underneath the main printer volume.
 
 **Firmware**
 
@@ -226,6 +227,8 @@ Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/
 - Instead of using the inductive probe for centering the print bed, use a sensor that has better defined sensing radii in the X and Y directions
   - The same centering routine can be used, but a different sensor solution is needed
 - Create an airtight enclosure for the filament spool
+- Reduce number of electronics cooling fans from four to two
+
 If you build a Fractal 5 Pro and discover any other problems, please let me know.
 
 ---
