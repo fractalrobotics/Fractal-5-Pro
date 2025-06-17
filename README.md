@@ -45,7 +45,7 @@ My response to the customer interviews was to design an accessible product packa
 
 ---
 
-# Design Overview
+# 📐Design Overview
 This printer is comprised of a combination of COTS parts, 3D printed parts, and custom machined parts. The BOM lists all required materials with links to purchase them. Excluding taxes and shipping costs, the total materials cost for the Fractal 5 Pro is about $1,900.
 
 Several aspects of the design (such as the CoreXY system and triple lead-screw Z-axis) were inspired by the VORON Trident project, which is also licensed under GPLv3. This project complies with the GPLv3 license and is released under the same terms. I gratefully acknowledge VORON's contribution to the open hardware ecosystem.
@@ -64,7 +64,7 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 
 - The slip ring supplies power to and reads thermistor data from the build plate, allowing the A-axis to spin infinitely in either direction without wires getting tangled.
 - The A-axis shaft is held in place with a spring-loaded bearing stack with a retention ring in-between the bearings. The bearing stack is centered using locating pins.
-- A pulley with adjustable belt tension is used to drive the A-axis. This will be revised as stated in the future work section.
+- A pulley with adjustable belt tension is used to drive the A-axis. This should be revised as stated in the future work section.
 - The large B-axis gear with adjustable pinion placement is used to drive the B-axis.
 
 <p align="center">
@@ -76,20 +76,31 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 
 **Z-Axis Elevator**
 
+<p align="center">
 <img src="./CAD/images/z_axis_elevator_isolated.PNG" width="300">
-
+</p>
 
 - Similar to the VORON Trident, three independently driven lead screws are used to actuate the Z-axis.
-- Spherical bearings are used to allow the elevator frame to pivot to avoid binding and allow for tilt adjustments for auto-bed leveling.
+- Spherical bearings are used to avoid binding and allow the elevator frame to pivot for auto-bed leveling.
 - Sensorless homing is used to detect the upper range of motion of each lead screw.
+
+<p align="center">
+<img src="./CAD/images/range_of_motion.png" width="700">
+</p>
+
+- The range of motion for the Z-axis elevator is such that the printhead can reach any point within the build volume for any orientation of the gimbal with some additional margin in every direction. The image above shows examples of extreme positions with a blue cylinder representing the build volume.
 
 **Printhead**
 
+<p align="center">
 <img src="./CAD/images/printhead_isolated.PNG" width="300">
+</p>
 
 **CoreXY Gantry**
 
+<p align="center">
 <img src="./CAD/images/corexy_gantry_isolated.PNG" width="300">
+</p>
 
 - The CoreXY gantry system is similar to the one used on the VORON Trident with some important differences that are bulleted below:
   - The belt system was adapted to fit the larger 30x30mm aluminum frame extrusions of the Fractal 5 Pro.
@@ -98,8 +109,9 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 
 **Frame & Enclosure**
 
+<p align="center">
 <img src="./CAD/images/frame_and_enclosure_isolated.PNG" width="300">
-
+</p>
 
 <p align="center">
   <img src="./CAD/images/alpha_unit.png" width="300">
@@ -107,7 +119,9 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 
 **Electronics**
 
+<p align="center">
 <img src="./CAD/images/electronics_isolated.PNG" width="300">
+</p>
 
 - A Raspberry Pi is used to run the firmware and an Octopus Pro is used to control the circuit elements.
 
@@ -118,7 +132,9 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 
 **Firmware**
 
+<p align="center">
 <img src="./CAD/images/firmware.PNG" width="300">
+</p>
 
 - The Fractal 5 Pro uses Klipper firmware.
 - This allows the user to interface with the printer wirelessly on their laptop from anywhere on their local network.
