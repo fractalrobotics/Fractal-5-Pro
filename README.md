@@ -5,7 +5,7 @@ The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
 💻 An open-source 5-Axis slicer application was developed to go along with this printer. You can check out [the GitHub page for it here](https://github.com/fractalrobotics/Fractal-Cortex) to download it for free.
 
 <p align="center">
-  <img src="./CAD/images/alpha_unit_front.jpg" width="600">
+  <img src="./CAD/images/alpha_unit_front.jpg" width="700">
 </p>
 
 # Project Motivation
@@ -53,13 +53,13 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 **Gimbal**
 
 <p align="center">
-<img src="./CAD/images/gimbal_isolated.PNG" width="300">
+<img src="./CAD/images/gimbal_isolated.PNG" width="350">
 </p>
 
 - The gimbal assembly includes the heated build plate, adjustable standoffs, A-axis shaft, bearings, A-axis belt drive, slip ring, and B-axis gear drive.
 
 <p align="center">
-  <img src="./CAD/images/gimbal_front.jpg" width="300">
+  <img src="./CAD/images/gimbal_front.jpg" width="350">
 </p>
 
 - The slip ring supplies power to and reads thermistor data from the build plate, allowing the A-axis to spin infinitely in either direction without wires getting tangled.
@@ -68,7 +68,7 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 - The large B-axis gear with adjustable pinion placement is used to drive the B-axis.
 
 <p align="center">
-  <img src="./CAD/images/surface_coplanarity.jpg" width="300">
+  <img src="./CAD/images/surface_coplanarity.jpg" width="350">
 </p>
 
 - The build surface is a magnetically removable PEI-coated spring steel sheet.
@@ -77,11 +77,12 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 **Z-Axis Elevator**
 
 <p align="center">
-<img src="./CAD/images/z_axis_elevator_isolated.PNG" width="300">
+<img src="./CAD/images/z_axis_elevator_isolated.PNG" width="350">
 </p>
 
 - Similar to the VORON Trident, three independently driven lead screws are used to actuate the Z-axis.
 - Spherical bearings are used to avoid binding and allow the elevator frame to pivot for auto-bed leveling.
+- Each of the three elevator pivot locations are attached to a carriage that rides vertically along a linear rail for added stability.
 - Sensorless homing is used to detect the upper range of motion of each lead screw.
 
 <p align="center">
@@ -93,13 +94,13 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 **Printhead**
 
 <p align="center">
-<img src="./CAD/images/printhead_isolated.PNG" width="300">
+<img src="./CAD/images/printhead_isolated.PNG" width="350">
 </p>
 
 **CoreXY Gantry**
 
 <p align="center">
-<img src="./CAD/images/corexy_gantry_isolated.PNG" width="300">
+<img src="./CAD/images/corexy_gantry_isolated.PNG" width="350">
 </p>
 
 - The CoreXY gantry system is similar to the one used on the VORON Trident with some important differences that are bulleted below:
@@ -110,30 +111,30 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 **Frame & Enclosure**
 
 <p align="center">
-<img src="./CAD/images/frame_and_enclosure_isolated.PNG" width="300">
+<img src="./CAD/images/frame_and_enclosure_isolated.PNG" width="350">
 </p>
 
 <p align="center">
-  <img src="./CAD/images/alpha_unit.png" width="300">
+  <img src="./CAD/images/alpha_unit.png" width="350">
 </p>
 
 **Electronics**
 
 <p align="center">
-<img src="./CAD/images/electronics_isolated.PNG" width="300">
+<img src="./CAD/images/electronics_isolated.PNG" width="350">
 </p>
 
 - A Raspberry Pi is used to run the firmware and an Octopus Pro is used to control the circuit elements.
 
 
 <p align="center">
-  <img src="./CAD/images/electronics.jpg" width="300">
+  <img src="./CAD/images/electronics.jpg" width="350">
 </p>
 
 **Firmware**
 
 <p align="center">
-<img src="./CAD/images/firmware.PNG" width="300">
+<img src="./CAD/images/firmware.PNG" width="350">
 </p>
 
 - The Fractal 5 Pro uses Klipper firmware.
