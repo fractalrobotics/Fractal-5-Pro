@@ -99,6 +99,10 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 <img src="./CAD/images/frame_and_enclosure_isolated.PNG" width="350">
 </p>
 
+- The frame uses 30x30mm aluminum extrusions for high rigidity.
+- The enclosure features magnetically latched full size doors on the front and both sides for ease of access.
+- All enclosure panels including the doors are gasketed with foam tape to help promote a more thermally isolated printing environment.
+
 <p align="center">
   <img src="./CAD/images/alpha_unit.jpg" width="350">
 </p>
@@ -115,6 +119,8 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 <p align="center">
   <img src="./CAD/images/electronics.jpg" width="350">
 </p>
+
+- The electronics are enclosed separately from the rest of the printer volume and can be accessed via a removable panel underneath the main printer volume.
 
 **Firmware**
 
