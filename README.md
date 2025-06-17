@@ -8,16 +8,53 @@ The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
   <img src="./CAD/images/alpha_unit_front.jpg" width="600">
 </p>
 
-# Product Overview
+# Project Motivation
+This project was motivated by the **Fractal Robotics** vision: **To accelerate the development of mechanical solutions.** In support of this vision, this project aims to address the observed gap between the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM.
 
-# Design
+**📋Limitations of 3-Axis FDM**
+  - Part strength is limited due to the direction of printing
+    - Parts often fail when forces are applied parallel to the direction of layer lines
+    - Stacking layers in only one direction limits design freedom
+  - Overhangs require support structures
+    - The process of removing supports often damages or destroys a part
+    - Support structures waste material
+
+**🔒Inaccessibility of Existing 5-Axis FDM**
+  - Options for existing 5-Axis slicer applications are limited
+    - Most non-planar slicing requires significant training on advanced CAM softwares and are not compatible with all geometries
+  - Most commercially available 5-Axis 3D printers are huge and expensive
+
+**🌉Bridging the Gap**
+
+The observations listed above prompted an investigation into the needs of 3D printing practitioners across different industries. The result was the development of both the [Fractal Cortex](https://github.com/fractalrobotics/Fractal-Cortex) slicer and the Fractal 5 Pro printer.
+
+# 🔎Product-Market Fit
+Dozens of potential customers were interviewed to determine 3D printing needs, budgets, and expectations across different industries. This process helped inform and focus design decisions.
+
+**🔑Key Customer Needs Translated to Design Decisions**
+
+My response to the customer interviews was to design an accessible product package (hardware & software) that addressed the shortfalls of 3-axis FDM while still being easy to use.
+
+  - Control over orthotropic strength, less waste material, reduced post-processing risk ➡️ 5-Axis
+  - Ease of maintenance, clean setup ➡️ FDM, removable build surface, full-size front and side doors
+  - Reduced training time ➡️ Intuitive multidirectional slicer software, backwards compatibility with 3-Axis 3D printing
+  - Printing complex parts ➡️ Compatible with any 3D geometry
+  - High reliability ➡️ CoreXY gantry, auto bed leveling, rigid 30x30mm aluminum frame extrusions
+  - Expansive material compatibility ➡️ Direct Drive Extruder, heated build plate, fully enclosed
+  - Large print volume ➡️ 300mm Diameter x 250mm build height
+
+---
+
+# Design Overview
 This printer is comprised of a combination of COTS parts, 3D printed parts, and custom machined parts. The BOM lists all required materials with links to purchase them. Excluding taxes and shipping costs, the total materials cost for the Fractal 5 Pro is about $1,900.
 
 Several aspects of the design (such as the CoreXY system and triple lead-screw Z-axis) were inspired by the VORON Trident project, which is also licensed under GPLv3. This project complies with the GPLv3 license and is released under the same terms. I gratefully acknowledge VORON's contribution to the open hardware ecosystem.
 
 **Gimbal**
 
+<p align="center">
 <img src="./CAD/images/gimbal_isolated.PNG" width="300">
+</p>
 
 - The gimbal assembly includes the heated build plate, adjustable standoffs, A-axis shaft, bearings, A-axis belt drive, slip ring, and B-axis gear drive.
 
@@ -56,7 +93,7 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 
 - The CoreXY gantry system is similar to the one used on the VORON Trident with some important differences that are bulleted below:
   - The belt system was adapted to fit the larger 30x30mm aluminum frame extrusions of the Fractal 5 Pro.
-  - The belts run on the rear side of the gantry to be compatible with the unique printhead design.
+  - The belts attach to the printhead on the rear side of the gantry to be compatible with the unique printhead design.
 - CoreXY motion systems provide more reliable prints and allow for higher print speeds compared to bedslinger motion systems.
 
 **Frame & Enclosure**
@@ -87,43 +124,6 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 - This allows the user to interface with the printer wirelessly on their laptop from anywhere on their local network.
 - The custom CFG file and saved variables file required to run the Fractal 5 Pro are located [here](https://github.com/fractalrobotics/Fractal-5-Pro/tree/main/Firmware).
 - The [KIAUH](https://github.com/dw-0/kiauh) helper can be used to install Klipper.
-
----
-
-# Project Motivation
-This project was motivated by the **Fractal Robotics** vision: **To accelerate the development of mechanical solutions.** In support of this vision, this project aims to address the observed gap between the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM.
-
-**📋Limitations of 3-Axis FDM**
-  - Part strength is limited due to the direction of printing
-    - Parts often fail when forces are applied parallel to the direction of layer lines
-    - Stacking layers in only one direction limits design freedom
-  - Overhangs require support structures
-    - The process of removing supports often damages or destroys a part
-    - Support structures waste material
-
-**🔒Inaccessibility of Existing 5-Axis FDM**
-  - Options for existing 5-Axis slicer applications are limited
-    - Most non-planar slicing requires significant training on advanced CAM softwares and are not compatible with all geometries
-  - Most commercially available 5-Axis 3D printers are huge and expensive
-
-**🌉Bridging the Gap**
-
-The observations listed above prompted an investigation into the needs of 3D printing practitioners across different industries. The result was the development of both the [Fractal Cortex](https://github.com/fractalrobotics/Fractal-Cortex) slicer and the Fractal 5 Pro printer.
-
-# 🔎Product-Market Fit
-Dozens of potential customers were interviewed to determine 3D printing needs, budgets, and expectations across different industries. This process helped inform and focus design decisions.
-
-**🔑Key Customer Needs Translated to Design Decisions**
-
-My response to the customer interviews was to design an accessible product package (hardware & software) that addressed the shortfalls of 3-axis FDM while still being easy to use.
-
-  - Control over orthotropic strength, less waste material, reduced post-processing risk ➡️ 5-Axis
-  - Ease of maintenance, clean setup ➡️ FDM, removable build surface, full-size front and side doors
-  - Reduced training time ➡️ Intuitive multidirectional slicer software, backwards compatibility with 3-Axis 3D printing
-  - Printing complex parts ➡️ Compatible with any 3D geometry
-  - High reliability ➡️ CoreXY gantry, auto bed leveling, rigid 30x30mm aluminum frame extrusions
-  - Expansive material compatibility ➡️ Direct Drive Extruder, heated build plate, fully enclosed
-  - Large print volume ➡️ 300mm Diameter x 250mm build height
 
 ---
 
