@@ -63,7 +63,7 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 - The printhead was designed so that when the B-axis is tilted 90°, the nozzle can move extremely close to the build plate. Designing the printhead this way increases the amount of design freedom the user has over where they can define [slicing directions](https://github.com/fractalrobotics/Fractal-Cortex?tab=readme-ov-file#user-guide). Due to [the differences between multidirectional printing and non-planar printing](https://github.com/fractalrobotics/Fractal-Cortex?tab=readme-ov-file#user-guide), the printhead only needs to approach the build plate closely on one side as shown in the image below; the remainder of the printhead does not have any other special geometry constraints.
 
 <p align="center">
-<img src="./CAD/images/printhead_close_approach.png" width="350">
+<img src="./CAD/images/printhead_close_approach.png" width="700">
 </p>
 
 - The printhead uses a BondTech LGX Lite V2 direct drive extruder due to its compact size and ideal shape for this application.
@@ -72,7 +72,7 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 - An inductive probe is used both for auto bed leveling and for calibrating to the center of the build plate. Due to the difficult to characterize electromagnetic field shape of the inductive probe, it was tested and decided to have low reliability for center calibration. The inductive probe should still be used for auto bed leveling, but another type of sensor should be used for center calibration as is discussed in the future work section.
 
 <p align="center">
-<img src="./CAD/images/printhead_views.png" width="350">
+<img src="./CAD/images/printhead_views.png" width="700">
 </p>
 
 **CoreXY Gantry**
