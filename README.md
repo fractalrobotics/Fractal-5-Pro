@@ -8,6 +8,8 @@ The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
   <img src="./CAD/images/alpha_unit_front.jpg" width="500">
 </p>
 
+---
+
 # 📐Design Overview
 This printer is comprised of a combination of COTS parts, 3D printed parts, and custom machined parts. The BOM lists all required materials with links to purchase them. Excluding taxes and shipping costs, the total materials cost for the Fractal 5 Pro is about $1,900.
 
@@ -60,14 +62,14 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 <img src="./CAD/images/printhead_isolated.PNG" width="350">
 </p>
 
-- The printhead was designed so that when the B-axis is tilted 90°, the nozzle can move extremely close to the build plate. Designing the printhead this way increases the amount of design freedom the user has over where they can define [slicing directions](https://github.com/fractalrobotics/Fractal-Cortex?tab=readme-ov-file#user-guide). Due to [the differences between multidirectional printing and non-planar printing](https://github.com/fractalrobotics/Fractal-Cortex?tab=readme-ov-file#user-guide), the printhead only needs to approach the build plate closely on one side as shown in the image below; the remainder of the printhead does not have any other special geometry constraints.
+- The printhead was designed so that when the B-axis is tilted 90°, the nozzle can move extremely close to the build plate. Designing the printhead this way increases the amount of design freedom the user has over where they can define [slicing directions](https://github.com/fractalrobotics/Fractal-Cortex?tab=readme-ov-file#user-guide). Due to [the differences between multidirectional printing and non-planar printing](https://github.com/fractalrobotics/Fractal-5-Pro?tab=readme-ov-file#faqs), the printhead only needs to approach the build plate closely on one side as shown in the image below; the remainder of the printhead does not have any other special geometry constraints.
 
 <p align="center">
 <img src="./CAD/images/printhead_close_approach.png" width="700">
 </p>
 
 - The printhead uses a BondTech LGX Lite V2 direct drive extruder due to its compact size and ideal shape for this application.
-- An E3D Volcano hotend is used so that the high flow rate of the nozzle can keep up with the high speed capability of the coreXY gantry.
+- An E3D Volcano hotend is used so that the flow rate of the nozzle can keep up with the high speed capability of the coreXY gantry.
 - A radial fan and swept duct is used for part cooling and the stock E3D axial fan is used to cool the hotend heat sink.
 - An inductive probe is used for both auto bed leveling and calibrating to the center of the build plate. I created an edge-finding procedure by writing custom G-code macros in Klipper for the center calibration process. While the center calibration routine was tested and works, the inductive probe is not ideal for use in this application because of its difficult to characterize electromagnetic field shape. The inductive probe still works great for auto bed leveling, but a different type of sensor should be selected for center calibration as is discussed in the future work section.
 
@@ -91,7 +93,7 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
 </p>
 
 - The tension in each belt can be adjusted using an allen key via the idler blocks on either side of the gantry.
-- Cable chains are used to manage wires along the X and Y axes. Wire management for the printhead should be converted to CAN bus as stated in the future work section.
+- Cable chains are used to manage wires along the X and Y axes. Wire management for the printhead should eventually be converted to CAN bus as stated in the future work section.
 
 **Frame & Enclosure**
 
@@ -121,7 +123,7 @@ Several aspects of the design (such as the CoreXY system and triple lead-screw Z
   <img src="./CAD/images/electronics.jpg" width="350">
 </p>
 
-- The electronics are enclosed separately from the rest of the printer and can be accessed via a removable panel underneath the main printer volume.
+- The electronics are enclosed separately from the rest of the printer and can be accessed via a removable panel underneath the main printer working volume.
 
 **Firmware**
 
@@ -156,6 +158,8 @@ This project was motivated by the **Fractal Robotics** vision: **To accelerate t
 
 The observations listed above prompted an investigation into the needs of 3D printing practitioners across different industries. The result was the development of both the [Fractal Cortex](https://github.com/fractalrobotics/Fractal-Cortex) slicer and the Fractal 5 Pro printer.
 
+---
+
 # 🔎Product-Market Fit
 Dozens of potential customers were interviewed to determine 3D printing needs, budgets, and expectations across different industries. This process helped inform and focus design decisions.
 
@@ -184,7 +188,7 @@ Open sourcing this project allows me to stay true to the original vision of Frac
 
 I'm excited to see where others take this work next.
 
-Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/) on LinkedIn. 
+Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/) on LinkedIn and reach out to me via email: dan@fractalrobotics.com
 
 ---
 
@@ -194,13 +198,13 @@ Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/
 - It provides all of the following in one product: high reliability, stronger parts, more design freedom, less waste material, large build volume, intuitive user experience, and ease of maintenance at a relatively affordable price.
 
 **What is multidirectional 5-axis 3D printing?**
-- Multidirectional 5-axis slicing is a technique in which a 3D model is divided into sub-volumes (chunks) and each chunk is sliced in a different direction. This allows users to define multiple slicing directions for a given part. The result is a gcode file with toolpath instructions that include reorienting the part relative to the printhead after each successive chunk is printed. This approach is distinct from non-planar slicing, which modifies the surface of each layer to follow the curvature of the model's shape.
+- Multidirectional 5-axis printing is a technique in which a 3D model is divided into sub-volumes (chunks) and each chunk is printed in a different direction. This allows users to define multiple slicing directions for a given part. The result is a gcode file with toolpath instructions that include reorienting the part relative to the printhead after each successive chunk is printed. This approach is distinct from non-planar slicing, which modifies the surface of each layer to follow the curvature of the model's shape.
 
 <p align="center">
   <img src="./CAD/images/Multidirectional_Slicing.PNG" width="700">
 </p>
 
-**Why focus on multidirectional slicing instead of non-planar printing?**
+**Why focus on multidirectional printing instead of non-planar printing?**
 - Non-planar slicing often requires significant training in advanced CAM software and tends to be computationally expensive. In contrast, multidirectional slicing provides many of the same benefits of 5-axis 3D printing - such as directional strength control and reduced support requirements - within a more accessable and familiar workflow. 
 
 - From a hardware standpoint, multidirectional 5-axis 3D printers avoid an important mechanical limitation of non-planar 5-axis 3D printers. Since they don't require the printhead to be long and thin to achieve tight angles, multidirectional printers can achieve much higher print speeds with far less vibration. That said, non-planar slicing is an exciting and evolving area of research, and ongoing developments will hopefully make that method more accessible as well.
@@ -211,12 +215,10 @@ Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/
 **Why Direct Drive instead of Remote Drive?**
 - The customers interviewed tend to favor printers that are compatible with a wide selection of feedstock materials, including softer filaments. TPU needs direct drive to print effectively since it's so soft. Using remote drive to extrude soft filaments would be like pushing on the end of a string to get the far end to move, which doesn't work very well.
 
-**How is the print bed heated if it can spin infinitely? Wouldn't the wires get twisted up?**
-- A high current slip-ring is used to transfer power to the rotating shaft.
-
 ---
 
 # 📝Future Work
+
 - Redesign print bed gimbal for higher rigidity
   - Use 1/4" thick aluminum sheets instead of 1/8"
   - Rearrange A-Axis bearing assembly to minimize unsupported shaft length
@@ -229,7 +231,7 @@ Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/
 - Create an airtight enclosure for the filament spool
 - Reduce number of electronics cooling fans from four to two
 
-If you build a Fractal 5 Pro and discover any other problems, please let me know.
+If you build a Fractal 5 Pro and discover any other potential improvements, please let me know: dan@fractalrobotics.com
 
 ---
 
