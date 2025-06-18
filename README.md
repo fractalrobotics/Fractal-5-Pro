@@ -8,8 +8,6 @@ The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
   <img src="./CAD/images/alpha_unit_front.jpg" width="500">
 </p>
 
----
-
 # 📐Design Overview
 This printer is comprised of a combination of COTS parts, 3D printed parts, and custom machined parts. The BOM lists all required materials with links to purchase them. Excluding taxes and shipping costs, the total materials cost for the Fractal 5 Pro is about $1,900.
 
