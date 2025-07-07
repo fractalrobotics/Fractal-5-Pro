@@ -233,6 +233,12 @@ If you build a Fractal 5 Pro and discover any other potential improvements, plea
 
 ---
 
+# Disclaimer
+
+The Fractal 5 Pro is an open-source hardware project provided ‘as-is’ without warranty. By building or operating a derivative of this printer, you assume full responsibility for any risks, damages, or safety hazards that may arise.
+
+---
+
 # Acknowledgements
 
 - Family & friends
